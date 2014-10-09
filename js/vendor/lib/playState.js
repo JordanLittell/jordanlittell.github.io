@@ -30,19 +30,7 @@
     key('space', function () { this.ship.fireBullets();  }.bind(this));
   };
   
-  PlayState.prototype.exit = function () {
-    key.unbind('w');
-    key.unbind('s');
-    key.unbind('a');
-    key.unbind('d');
-    key.unbind('z');
-    
-    key.unbind('up');
-    key.unbind('down');
-    key.unbind('left');
-    key.unbind('right');
-    key.unbind('space');
-  };
+ 
   
   PlayState.prototype.createAsteroids = function () {
     for (var i = 0; i < Asteroids.Game.NUM_ASTEROIDS; ++i) {
@@ -112,10 +100,24 @@
   
   PlayState.prototype.moveObjects = function() {
     var objs = this.allObjects();
+    var ship = Asteroids.Ship;
     var length = objs.length;
 
     for (var i = 0; i < length; ++i) {
       objs[i].move();
+    
+      if (objs[i].isA(ship)) {
+        if (key.isPressed('w')) { this.ship.power([0, -1]); };  
+        if (key.isPressed('s')) { this.ship.power([0, 1]); };
+        if (key.isPressed('a')) { this.ship.power([-1, 0]); };
+        if (key.isPressed('d')) { this.ship.power([1, 0]); };
+        if (key.isPressed('up')) { this.ship.power([0, -1]); };  
+        if (key.isPressed('down')) { this.ship.power([0, 1]); };
+        if (key.isPressed('left')) { this.ship.power([-1, 0]); };
+        if (key.isPressed('right')) { this.ship.power([1, 0]); }; 
+        if (key.isPressed('space')) { this.ship.fireBullets();  };   
+      }
+
     }
   };
 

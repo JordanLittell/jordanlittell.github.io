@@ -8,7 +8,7 @@
     this.changeState(new Asteroids.MenuState(this));
     
     this.img = new Image();
-    this.img.src = "spiral-galaxy.jpg"
+    this.img.src = "stars3.jpg"
     this.img.width = Game.DIM_X+100;
     this.img.height = Game.DIM_Y+100;
   };
@@ -21,7 +21,6 @@
     if (this.state != null) {
       this.state.exit();
     }
-    
     this.state = newState;
     this.state.enter();
   };

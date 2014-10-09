@@ -17,8 +17,8 @@
   Asteroids.Utils.inherits(Asteroids.MovingObject, Ship);
 
   Ship.MAX_SPEED = 4;
-  Ship.RADIUS = 5;
-  Ship.COLOR = "#EFEFEF";
+  Ship.RADIUS = 10;
+  Ship.COLOR = "#33ffff";
 
   Ship.prototype.relocate = function () {
     this.pos = [Asteroids.Game.DIM_X / 2, Asteroids.Game.DIM_Y / 2];
