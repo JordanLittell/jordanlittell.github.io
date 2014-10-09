@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>Asteroids</title>
+    <script src="js/vendor/lib/keymaster.js"></script>
+    <script src="js/vendor/lib/utils.js"></script>
+    <script src="js/vendor/lib/game.js"></script>
+    <script src="js/vendor/lib/gameView.js"></script>
+    <script src="js/vendor/lib/menuState.js"></script>
+    <script src="js/vendor/lib/playState.js"></script>
+    <script src="js/vendor/lib/gameOverState.js"></script>
+    <script src="js/vendor/lib/movingObject.js"></script>
+    <script src="js/vendor/lib/asteroid.js"></script>
+    <script src="js/vendor/lib/bullet.js"></script>
+    <script src="js/vendor/lib/ship.js"></script>
+  </head>
+
+  <style type="text/css">
+  body {
+    background-color: black;
+  }
+    #game-canvas {
+      width: 100%;
+      height: 700px;
+    }
+
+    .button {
+      color: white;
+      background: rgba(0, 0, 0, 0,8);
+      padding: 20px;
+      border: 1px solid white;
+      cursor: pointer;
+      transition: background-color .6s linear;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 100;
+      
+    }
+    .button:hover {
+      background-color: rgba(255,255,255,0.6);
+      color:black;
+    }
+  </style>
+  <body>
+    <canvas id="game-canvas"></canvas>
+    <footer>
+      <a href="./index.html"><div class="button">Go Back</div ></a>
+    </footer>
+  </body>
+
+  <script>
+    var canvas = document.getElementById("game-canvas");
+    var ctx = canvas.getContext('2d');
+    var game = new Asteroids.Game();
+    canvas.width = Asteroids.Game.DIM_X - 100;
+    canvas.height = Asteroids.Game.DIM_Y - 100;
+    var view = new Asteroids.GameView(game, ctx);
+    view.start();
+  </script>
+</html>

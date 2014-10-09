@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jordan Littell</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="css/normalize.css">
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+    
+    <nav class="navbar navbar-fixed-left navbar-minimal animate" role="navigation">
+        <div class="navbar-toggler animate">
+            <span class="menu-icon"></span>
+        </div>
+        <ul class="navbar-menu animate">
+            <li>
+                <a href="#resume" class="animate">
+                    <span class="fa fa-2x fa-pencil"></span>
+                    <span class="desc animate"> Resume </span>
+                </a>
+            </li>
+            <li>
+                <a href="#portfolio" class="animate">
+                    <span class="fa fa-2x fa-folder"></span>
+                    <span class="desc animate"> Portfolio </span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact-us" class="animate" data-toggle="modal" data-target="#myModal">
+                    <span class="fa fa-2x fa-phone"></span>
+                    <span class="desc animate"> Contact </span>
+                </a>
+            </li>
+            <li>
+                <a href="#about-us" class="animate">
+                    <span class="fa fa-2x fa-github-square"></span>
+                    <span class="desc animate"> GitHub </span>
+                </a>
+            </li>
+            <li>
+                <a href="#blog" class="animate">
+                    <span class="fa fa-2x fa-linkedin"></span>
+                    <span class="desc animate"> LinkedIn </span>
+                </a>
+            </li>
+            <li>
+                <a href="#blog" class="animate">
+                    <span class="fa fa-2x fa-tumblr"></span>
+                    <span class="desc animate"> Tumblr </span>
+                </a>
+            </li>
+            <li>
+                <a href="#blog" class="animate">
+                    <span class="fa fa-2x fa-twitter"></span>
+                    <span class="desc animate"> Twitter </span>
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+    </header>
+
+    <div class="banner">
+        <header>
+            <h1 class="title">Jordan Littell</h1>
+            <h3> Professional Web Developer with a background in Pure Mathematics </h3>
+        </header>
+    </div>
+    
+    <div class="container">
+        <div class='row'> 
+
+            <aside class="col-md-3 text-center">
+                <img src="css/picture.jpg" class="profile">
+                <h3>About Me</h3>
+                <p>I am a web developer in San Francisco currently looking for opportunities. My background is in mathematics (as you may have guessed) however I have been working as a web developer. I am passionate about making quality software and writing clean and maintainable code. Good design is important to me as well. Whenever I do front end work I make sure that it fuctions well and looks perfect.</p>
+            </aside>
+            <section class="col-md-offset-1 col-md-8" id="resume">
+                <h1>Resume</h1>
+                <hr>
+
+                <section>
+                    <h3>Education</h3>
+                    <p>B.S. Pure Mathematics from University of California Santa Barbara</p>
+                </section>
+
+                <section>
+                    <h3>Skills</h3>
+                    <section class="row">
+                        <ul class="col-md-4">
+                            <li>Ruby</li>
+                            <li>Ruby On Rails</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>Backbone.js</li>
+                            <li>SQL</li>
+                        </ul>
+                        <ul class="col-md-4 ">
+                            <li>Git</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>RSpec</li>
+                            <li>TDD</li>
+                            <li>Agile Development</li>
+                        </ul>
+                        <ul class="col-md-4">
+                            <li>Heroku</li>
+                            <li>Node.js</li>
+                            <li>D3</li>
+                            <li>PostgresSQL</li>
+                            <li>MVC Architecture</li>
+                        </ul>
+                     </section>
+                </section>
+
+                <section>
+                    <h3>Previous Occupation</h3>
+                    <strong>Web Developer at Milestone Graphics:</strong> 
+                    <p>As a web developer at milestone graphics, I made websites for rental properties using PHP, MySQL, AJAX, jQuery, and CSS. I also analyzed the traffic using Google Analytics. By deploying websites for Milestone, I increased their revenue and improved their web presence.</p>
+                </section>
+
+                <section>
+                    <h3>Projects</h3>
+                    <p>All of the projects I have been pursuing lately are written in Javascript and Ruby using Ruby On Rails and Backbone. I am growing increasingly familiar with Angular.js as I am building an application written purely in Angular.js and Ruby. See <a href="#portfolio">my portfolio below</a> for more information</p>
+                </section>
+            </section>
+        </div>
+    
+        <section>    
+            <hr>
+            <div class="row text-center" id="portfolio">
+                <h1>Portfolio</h1>
+                <p>Below you will find some examples of recent projects I have been working on</p>
+                
+                <div class="board">
+                    <div class="board-inner">
+                        <ul class="nav nav-tabs" id="myTab">
+                        <div class="liner"></div>
+                        <li class="active">
+                         <a href="#home" data-toggle="tab" title="TrakMyRun">
+                          <span class="round-tabs one">
+                                  <i class="fa fa-fire"></i>
+                          </span> 
+                         </a>
+                        </li>
+
+                        <li>
+                        <a href="#profile" data-toggle="tab" title="Asteroids">
+                         <span class="round-tabs">
+                             <i class="fa fa-rocket"></i>
+                         </span> 
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#messages" data-toggle="tab" title="Trello">
+                            <span class="round-tabs three">
+                              <i class="fa fa-trello"></i>
+                            </span> 
+                        </a>
+                        </li>
+
+                        <li><a href="#settings" data-toggle="tab" title="blah blah">
+                         <span class="round-tabs four">
+                              <i class="fa fa-database"></i>
+                         </span> 
+                        </a></li>
+
+                        <li><a href="#doner" data-toggle="tab" title="completed">
+                         <span class="round-tabs five">
+                              <i class="fa fa-reddit"></i>
+                         </span> </a>
+                        </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="home">
+
+                        <h3 class="head text-center">TrakMyRun</h3>
+                        <p class="narrow text-center">
+                        TrakMyRun is a social network I built with Backbone.js and Rails. I also used the google maps api and chart.js as well to build tools for the users to draw routes, calculate relevant metrics, and view them on their dashboard.
+                        </p>
+
+                        <p class="text-center">
+                            <a href="http://trak-my-run.herokuapp.com/sessions/new" class="btn btn-success btn-outline-rounded green"> Visit Website</a>
+                            <a href="https://github.com/JordanLittell/trakMyRun" class="btn btn-primary btn-outline-rounded green"> See Github Repo</a>
+                        </p>
+
+                        </div>
+                        <div class="tab-pane fade" id="profile">
+                            <div id="game-canvas"></div>
+                            <h3 class="head text-center">Asteroids</h3>
+                            <p class="narrow text-center">I built asteroids using plain javascript and the HTML5 canvas API. The game keeps track of levels, score, and lives.
+                            </p>
+
+                            <p class="text-center">
+                                <a href="asteroids.html" class="btn btn-success btn-outline-rounded green" id="asteroids-button"> Play the Game</a>
+                                <a href="https://github.com/JordanLittell/asteroids" class="btn btn-primary btn-outline-rounded green"> See Github Repo</a>
+                            </p>
+
+                        </div>
+                        <div class="tab-pane fade" id="messages">
+                            <h3 class="head text-center">Trello Clone</h3>
+                            <p class="narrow text-center">To increase my understanding of Backbone.js I built a clone of trello. The backend is in Ruby.
+                            </p>
+
+                            <p class="text-center">
+                            <a href="" class="btn btn-success btn-outline-rounded green">Visit Website</a>
+                            <a href="" class="btn btn-primary btn-outline-rounded green"> See Github Repo</a>
+                            </p>
+                        </div>
+
+                        <div class="tab-pane fade" id="settings">
+                            <h3 class="head text-center">Custom ORM</h3>
+                            <p class="narrow text-center">
+                            I built an object relational mapper using Ruby that provides a way to query for data via objects and methods.
+                            </p>
+
+                           <p class="text-center">
+                            <a href="" class="btn btn-success btn-outline-rounded green">Visit Website</a>
+                            <a href="https://github.com/JordanLittell/custom_orm" class="btn btn-primary btn-outline-rounded green"> See Github Repo</a>
+                            </p>
+                        </div>
+
+                        <div class="tab-pane fade" id="doner">
+                            <div class="text-center">
+                                <i class="img-intro icon-checkmark-circle"></i>
+                            </div>
+                            <h3 class="head text-center">Reddit Clone</h3>
+                            <p class="narrow text-center">
+                            A clone of reddit using just Ruby with the Ruby on Rails framework. 
+                            </p>
+                            <p class="text-center">
+                            <a href="" class="btn btn-success btn-outline-rounded green">Visit Website</a>
+                            <a href="https://github.com/JordanLittell/reddit_clone" class="btn btn-primary btn-outline-rounded green"> See Github Repo</a>
+                            </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>   
+        </section>  
+    </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Contact Info</h4>
+      </div>
+      <div class="modal-body">
+        <h2>Cell: (650) 773-8616</h2><br>
+        <h2>Email: jordanlittell@gmail.com</h2>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+        <div class="row">
+            <span class="contact col-md-4 col-md-offset-2">Cell: (650) 773-8616</span> <span class="contact col-md-4 ">Email: jordanlittell@gmail.com</span>
+        </div>
+        <section class="row">
+            <a href="https://github.com/JordanLittell"><span class="fa fa-5x fa-github-square col-md-3"></span></a>
+            <a href="https://www.linkedin.com/pub/jordan-littell/6b/7b8/333/"><span class="fa fa-5x fa-linkedin col-md-3"></span></a>
+            <a href="http://jordanlittell.tumblr.com/"><span class="fa fa-5x fa-tumblr col-md-3"></span></a>
+            <a href="https://twitter.com/jordanlittell"><span class="fa fa-5x fa-twitter col-md-3"></span></a>
+        </section>
+    </footer>     
+     <script src="js/keymaster.js"></script>    
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+       
+        
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+    </body>
+</html>
