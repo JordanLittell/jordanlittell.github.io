@@ -115,7 +115,6 @@
         if (key.isPressed('down')) { this.ship.power([0, 1]); };
         if (key.isPressed('left')) { this.ship.power([-1, 0]); };
         if (key.isPressed('right')) { this.ship.power([1, 0]); }; 
-        if (key.isPressed('space')) { this.ship.fireBullets();  };   
       }
 
     }
