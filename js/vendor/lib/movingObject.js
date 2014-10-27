@@ -14,10 +14,14 @@
   MovingObject.prototype.isWrappable = true;
   
   MovingObject.prototype.draw = function (ctx) {
-    ctx.beginPath();
-    ctx.fillStyle = this.color;
-    ctx.arc(this.pos[0], this.pos[1], this.radius, 0, 2 * Math.PI, false);
-    ctx.fill();
+    if (this.role === "SHIP") {
+      this.draw();
+    } else {
+      ctx.beginPath();
+      ctx.fillStyle = this.color;
+      ctx.arc(this.pos[0], this.pos[1], this.radius, 0, 2 * Math.PI, false);
+      ctx.fill();
+    }
   };
   
   MovingObject.prototype.move = function () {

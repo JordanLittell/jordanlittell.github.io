@@ -165,4 +165,8 @@
     if(pos[0] < 0) pos[0] = Asteroids.Game.DIM_X;
     if(pos[1] < 0) pos[1] = Asteroids.Game.DIM_Y;
   };
+
+  PlayState.prototype.exit = function () {
+    console.log('exiting');
+  }
 })();
