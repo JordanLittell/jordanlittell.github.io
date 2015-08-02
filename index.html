@@ -181,6 +181,12 @@
                          </span> 
                         </a></li>
 
+                        <li><a href="#snake" data-toggle="tab" title="Snake">
+                         <span class="round-tabs four">
+                              <i>S</i>
+                         </span> 
+                        </a></li>
+
                         <li><a href="#doner" data-toggle="tab" title="Reddit Clone">
                          <span class="round-tabs five">
                               <i class="fa fa-reddit"></i>
@@ -224,6 +230,18 @@
                             <p class="text-center">
                             <a href="https://murmuring-spire-1698.herokuapp.com/" class="btn btn-success btn-outline-rounded green">Website</a>
                             <a href="https://github.com/JordanLittell/chatApp" 
+                            class="btn btn-primary btn-outline-rounded green"> See Github Repo</a>
+                            </p>
+                        </div>
+
+                        <div class="tab-pane fade" id="snake">
+                            <h3 class="head text-center">Snake Game</h3>
+                            <p class="narrow text-center">
+                            The traditional game with a twist. The snake has lasers. They anything but useful. But maybe you will find it amusing.
+                            </p>
+                            <p class="text-center">
+                            <a id="snake-game" data-toggle="modal" data-target="#snake-modal" class="btn btn-success btn-outline-rounded green">Play</a>
+                            <a href="https://github.com/JordanLittell/snakes_from_space" 
                             class="btn btn-primary btn-outline-rounded green"> See Github Repo</a>
                             </p>
                         </div>
@@ -281,6 +299,22 @@
   </div>
 </div>
 
+<div class="modal fade" id="snake-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="myModalLabel">Snake In Space</h4>
+    </div>
+    <div class="modal-body" id="game-container">
+      <!--insert the canvas here-->
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+  </div>
+</div>
+
 
     <footer>
         <div class="row">
@@ -293,12 +327,24 @@
             <a href="https://twitter.com/jordanlittell"><span class="fa fa-5x fa-twitter col-md-3"></span></a>
         </section>
     </footer>     
-    <script src="js/keymaster.js"></script>    
+    <script src="js/vendor/lib/keymaster.js"></script>    
     <script src="js/vendor/jquery-1.10.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="snake/modules/controls.js"></script>
+    <script src="snake/modules/keys.js"></script>
+    <script src="snake/modules/underscore.js"></script>
+   <script type="text/javascript" src="snake/modules/underscore.js"></script>
+   <script type="text/javascript" src="snake/modules/keys.js"></script>
+   <script type="text/javascript" src="snake/modules/controls.js"></script>
+   <script type="text/javascript" src="snake/events.js"></script>
+   <script type="text/javascript" src="snake/laser.js"></script>
+   <script type="text/javascript" src="snake/plasma.js"></script>
+   <script type="text/javascript" src="snake/game.js"></script>
+   <script type="text/javascript" src="snake/environment.js"></script>
+   <script type="text/javascript" src="snake/snake.js"></script>   
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -306,9 +352,16 @@
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
     ga('create', 'UA-55579517-1', 'auto');
     ga('send', 'pageview');
+
+    $('#snake-game').on('click', function () {
+      $('#game-container').html('<canvas id="game-context"></canvas>');
+      $('#game-context').attr('height', 400).attr('width', 800);
+      var el = $('#game-context')[0]; 
+      var game = new Game(el);
+    })
+
     </script>
 
     </body>
